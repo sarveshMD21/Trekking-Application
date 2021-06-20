@@ -1,0 +1,22 @@
+<%- layout("layout/boiler") %>
+    <form action="/forts/<%= fort._id %>?_method=PUT" method="POST">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="fort[title]" value="<%= fort.title %>"  >
+        </div>
+        <div>
+            <label for="price">price</label>
+            <input type="text" id="price" name="fort[price]" value="<%= fort.price %>" >
+        </div>
+        <div>
+            <label for="description" >description</label>
+            <textarea id="description" name="fort[description]"  >
+                <%= fort.description%>
+            </textarea>
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" id="location" name="fort[location]" value="<%= fort.location %>" >
+        </div>
+        <button type="submit">Edit Complete</button>
+    </form>
