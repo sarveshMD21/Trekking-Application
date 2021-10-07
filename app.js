@@ -7,7 +7,7 @@ const Fort=require("./modules/fort");
 const MethodOverride =require("method-override");
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
-
+//hello
 mongoose.connect('mongodb://localhost:27017/Trekking', {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
