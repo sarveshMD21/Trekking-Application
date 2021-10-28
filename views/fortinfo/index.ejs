@@ -1,0 +1,8 @@
+<% layout("layout/boiler") %>
+<h1>All forts</h1>
+
+<ul>
+    <% for(let forts of fort){%>
+        <li><a href="/forts/<%= forts._id %>"><%=forts.title%></li>
+    <%}%>
+</ul>

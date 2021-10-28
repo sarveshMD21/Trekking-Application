@@ -1,0 +1,14 @@
+<% layout("layout/boiler") %>
+
+
+
+<h1><%= fort.title %></h1>
+<h2><%= fort.price %></h2>
+<h2><%= fort.description %></h2>
+<h2><%= fort.location %></h2>
+
+<a href="/forts/<%= fort._id %>/edit" >Edit kar</a>
+<a href="/forts">Go Back</a>
+<form action="/forts/<%= fort._id %>?_method=DELETE" method="POST" >
+    <button>Delete</button>
+</form>
